@@ -2,11 +2,11 @@
 Attribute VB_Name = "Module1"
 Option Explicit
 
-https://github.com/acr002/vba_collect_files.git
-git@github.com:acr002/vba_collect_files.git
-
 '***********************************************
 ' 2019.07.03(…).new
+'***********************************************
+' https://github.com/acr002/vba_collect_files.git
+' git@github.com:acr002/vba_collect_files.git
 '***********************************************
 Private Enum numbers
   zero = 0
@@ -57,7 +57,7 @@ Public Sub main()
   Set fc = New C0path
   Set col_in = New Collection
   For Each ii In fc.col_fn_in_sub
-    If ii Like "*xlx*" Then
+    If ii Like "*xls*" Then
       col_in.Add data_text(CStr(ii), pj, ys_pj, out_line_size)
     End If
   Next ii
@@ -81,6 +81,7 @@ Private Function data_text(a_filename As String, pj As Variant, ys_pj As Long, o
   Dim wb        As Workbook
   Dim ws        As Worksheet
   Dim ol        As Variant
+  Dim j         As Long
   Dim i         As Long
   Dim y         As Long
   Dim now_sheet As String
@@ -109,7 +110,7 @@ Private Function data_text(a_filename As String, pj As Variant, ys_pj As Long, o
             tt = val(tt_buf)
             if tt then
               if tt > pj(y, hpj_cts) then
-                for 
+                for j = 
                 '
               else
                 ar(tt) = true
