@@ -6,9 +6,6 @@ Option Explicit
 ' 2019.07.03(êÖ).new
 ' 2019.07.04(ñÿ)
 '***********************************************
-' https://github.com/acr002/vba_collect_files.git
-' git@github.com:acr002/vba_collect_files.git
-'***********************************************
 Public fc As C0path
 '***********************************************
 Private Enum numbers
@@ -44,9 +41,9 @@ End Enum
 '***********************************************
 
 Public Sub main()
-  Dim py_fa As Long
-  Dim ws_fa As Worksheet
-  Dim wb_fa As Workbook
+  Dim py_fa         As Long
+  Dim ws_fa         As Worksheet
+  Dim wb_fa         As Workbook
   Dim sample_id     As Long
   Dim elog          As c0_Log
   Dim out_line_size As Long
